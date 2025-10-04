@@ -58,25 +58,25 @@ while True:
 		# Misc AQI
         if myaqi25 <= 9.0:
             status25 = 'G'
-        elif myaqi25 > 9 & myaqi <= 35.4:
+        elif myaqi25 > 9 & myaqi25 <= 35.4:
             status25 = 'M'
-        elif myaqi25 > 35.4 & myaqi <= 55.4:
+        elif myaqi25 > 35.4 & myaqi25 <= 55.4:
             status25 = 'S'
-        elif myaqi25 > 55.4 & myaqi <= 125.4:
+        elif myaqi25 > 55.4 & myaqi25 <= 125.4:
             status25 = 'U'
-        elif myaqi25 > 125.4 & myaqi <= 225.4:
+        elif myaqi25 > 125.4 & myaqi25 <= 225.4:
             status25 = 'V'
         elif myaqi25 > 225.4:
             status25 = 'H'
         if myaqi10 <= 54:
             status10 = 'G'
-        elif myaqi10 > 54 & myaqi <= 154:
+        elif myaqi10 > 54 & myaqi10 <= 154:
             status10 = 'M'
-        elif myaqi10 > 154 & myaqi <= 254:
+        elif myaqi10 > 154 & myaqi10 <= 254:
             status10 = 'S'
-        elif myaqi10 > 254 & myaqi <= 354:
+        elif myaqi10 > 254 & myaqi10 <= 354:
             status10 = 'U'
-        elif myaqi10 > 354 & myaqi <= 454:
+        elif myaqi10 > 354 & myaqi10 <= 454:
             status10 = 'V'
         elif myaqi10 > 454:
             status10 = 'H'
@@ -90,5 +90,6 @@ while True:
     except Exception as e:
         print (e)
         time.sleep(12)
+
 
 
