@@ -10,6 +10,7 @@ import adafruit_dht
 # Setup a query-mode reader on /dev/ttyUSB0
 pmsensor = SDS011QueryReader('/dev/ttyUSB0')
 tempsensor = adafruit_dht.DHT11(board.D4)
+# Setup Display
 lcd_port = '/dev/ttyAMA0'
 lcd = serial.Serial(lcd_port, baudrate=9600, timeout=1)
 
@@ -90,6 +91,7 @@ while True:
     except Exception as e:
         print (e)
         time.sleep(12)
+
 
 
 
